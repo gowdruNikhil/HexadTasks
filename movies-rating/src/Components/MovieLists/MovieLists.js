@@ -36,7 +36,7 @@ class Movies extends Component {
                         disabled={movie.rating >= 10}
                         className="btn btn-success"
                         onClick={() => this.props.onIncrementRating(movie.id)}>
-                        Increate +
+                        Increase +
                     </button>
                 </td>
             </tr>
