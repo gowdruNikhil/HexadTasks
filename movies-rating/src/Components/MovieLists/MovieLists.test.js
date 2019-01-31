@@ -38,10 +38,17 @@ expect(wrapper.find(<td/>));
         expect(wrapper.props().className).to.equal('foo');
       });
 
-      it('simulates click events', () => {
+      it('simulates click events on button', () => {
         
         const wrapper = mount( <button className="btn btn-danger" />);
         wrapper.find('button').simulate('click');
         expect(wrapper.props().className).to.equal('btn btn-danger');
+      });
+
+      it('simulates click events on Table rating header for sorting', () => {
+        
+        const wrapper = mount( <th/>);
+        wrapper.find('th').simulate('click');
+        expect(wrapper.find(<th/>));
       });
 });
