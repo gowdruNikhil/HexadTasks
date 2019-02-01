@@ -39,16 +39,9 @@ expect(wrapper.find(<td/>));
       });
 
       it('simulates click events on button', () => {
-        
-        const wrapper = mount( <button className="btn btn-danger" />);
+        const wrapper = mount( <button className="btn btn-primary" />);
         wrapper.find('button').simulate('click');
-        expect(wrapper.props().className).to.equal('btn btn-danger');
+        expect(wrapper.props().className).to.equal('btn btn-primary');
       });
-
-      it('simulates click events on Table rating header for sorting', () => {
-        
-        const wrapper = mount( <th/>);
-        wrapper.find('th').simulate('click');
-        expect(wrapper.find(<th/>));
-      });
+      
 });

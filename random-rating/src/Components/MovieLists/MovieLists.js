@@ -85,12 +85,4 @@ const mapStateToProps = state => {
     }
 }
 
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         randomRatingStart: dispatch({ type: 'START' }),
-//         //randomRatingStop: dispatch({ type: 'STOP' })
-//     }
-
-// }
-
 export default connect(mapStateToProps)(Movies);
